@@ -1,4 +1,18 @@
-// calculatrice
+
+
+function clean(){
+    document.getElementById("getToNumber").value = "";
+}
+function dig(n){
+    const list = [];
+    console.log(n)
+    //document.getElementById("getToNumber").value = "value+n";
+    document.getElementById("getToNumber").value = n;
+    list.push(list[]);
+  
+  }
+
+/* calculatrice
 
 function enter () {
     console.log("I'm here!")
@@ -7,38 +21,57 @@ function enter () {
     let resultHTML;
     let cleanInput;
     //Prendre l'input de le formulaire et le savoir stocke dans un variable    
-    resultHTML = document.getElementById("ciao")
+    //resultHTML = document.getElementById("ciao")
+    resultHTML = document.getElementsByClassName("getToNumber")
     input = document.getElementById("getToNumber")
 
 
     console.log("Input", input)
+
     console.log("Input", input.value)
     console.log("Input", typeof input.value)
 
     cleanInput = parseInt(input.value)
 
-    //Sauvagarde l'input
-    result = isPair(cleanInput)
+    //add max
 
-    console.log(resultHTML)
-    if (result === true) {
-        console.log('Paire')
-        resultHTML.innerText = "C'est paire"
-        //afficher le message c'est paire
-    } else {
-        console.log('Impair')
-        resultHTML.innerText = "C'est impaire"
-        //afficher le message c'est impaire
-    }
+
+
+function add(a, b)
+{
+	return a + b
 }
 
-function isPair(numberToTest) {
-    let result = 0;
-    result = numberToTest / 2
-    if (Number.isInteger(result)) {
-        return true
-    } else {
-        return false
-    }
+function findaamax()
+{
+	const list = [1, 1, 1, 1, 1];
+	let sum = 0;
+	let restHTML;
+	for (let p = 0; p < list.length; p++)
+	{
+		if (p === 0)
+		{
+
+			sum = (list[p])
+
+		}
+		else
+		{
+
+			sum = add(sum, list[p])
+
+		}
+
+	} //console.log("Le total est:",sum);
+	restHTML = document.getElementById("findaamax");
+	restHTML.innerHTML = "Le sum de [1,1,1,1,1 est:]" + sum
+	//sum=add(sum,)
+
+
+
 
 }
+//findaamax()
+
+}
+*/
